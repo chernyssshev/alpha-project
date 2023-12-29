@@ -34,7 +34,7 @@ function UserProfile() {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:8080/api/users/me', {
+        const response = await axios.get('http://localhost:3000/api/users/me', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -55,7 +55,7 @@ function UserProfile() {
   const handleEditClick = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:8080/api/users/me/edit', user, {
+      const response = await axios.post('http://localhost:3000/api/users/me/edit', user, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -74,7 +74,7 @@ function UserProfile() {
   
   const getUserData = async (token) => {
     try {
-      const response = await axios.get('http://localhost:8080/api/users/me', {
+      const response = await axios.get('http://localhost:3000/api/users/me', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -103,7 +103,7 @@ function UserProfile() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:8080/api/company', companyData, {
+      const response = await axios.post('http://localhost:3000/api/company', companyData, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

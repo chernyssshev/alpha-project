@@ -1,5 +1,10 @@
 # alphaquiz-project
 
+## Start serve
+```
+npm start
+```
+
 ## Project setup
 ```
 npm install
