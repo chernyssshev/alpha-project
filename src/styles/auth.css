@@ -1,0 +1,81 @@
+.auth-h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: 38;
+  margin-top: 70px;
+  margin-bottom: 120px;
+  color: #043133;
+}
+
+.auth-container {
+  display: flex; 
+  flex-direction: row; 
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  flex: 40%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+}
+
+form {
+  flex: 60%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  font-weight: 500;
+  color: #4D5959;
+}
+
+.auth-inp {
+  padding: 10px;
+  margin-top: 5px;
+  border:none;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #EFF0F2;
+}
+
+button[type="submit"] {
+  padding: 10px 40px;
+  background-color: #374785;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  margin: 30px;
+  font-size: 18px;
+}
+  
+  button[type="submit"]:hover {
+    background-color: #0D2068;
+  }
+
+  button[type="button"]{
+    background-color: #EFF0F2;
+    color:#4D5959;
+    border: none;
+    padding: 5px;
+  }
+
+  button[type="button"]:hover {
+    background-color: #D4D4D4;
+  }
+
+  .p-auth{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
